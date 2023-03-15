@@ -5,10 +5,10 @@ import { StyleSheet, Text, View,  TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 
 
-export default function RandomNumber({ randomNumber, isDisabled }) {
+export default function RandomNumber({ id, randomNumber, isDisabled, onPress }) {
 
   const handlePress = () =>{
-    console.log(randomNumber)
+    onPress(id)
   }
   return (
     <TouchableOpacity onPress={handlePress}>
