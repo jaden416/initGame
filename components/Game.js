@@ -10,7 +10,7 @@ import { StyleSheet, Text, View,  } from 'react-native';
 
 export default function Game({ randomNumberCount }) {
   
-  const [selectedNumbers, setSelectedNumbers] = React.useState([0, 5])
+  const [selectedNumbers, setSelectedNumbers] = React.useState([])
 
   // Create an array of random numbers
   let randomNumbers = Array
